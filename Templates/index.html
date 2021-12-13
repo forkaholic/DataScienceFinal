@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <form id="data" method="post" action="/check">
+            <fieldset>
+                <legend>Twitch Follower Gain Prediction</legend>
+
+                <label for="watch">Watch Time (minutes) </label><br/>
+                <input type="number" name="watch" value=0 ><br/><br/>
+
+                <label for="stream">Stream Time (minutes) </label><br/>
+                <input type="number" name="stream" value=0><br/><br/>
+
+                <label for="avg">Average Viewers </label><br/>
+                <input type="number" name="avg" value=0 ><br/><br/>
+
+                <label for="follow">Follower Count </label><br/>
+                <input type="number" name="follow" value=0><br/><br/>
+
+                
+                <label>Partnered</label><br/>
+                <input type="radio" id="PT" name="part" value=1 checked="checked">
+                <label for="PT">Partnered</label><br/>
+                <input type="radio" id="PF" name="part" value=0 >
+                <label for="PF">Not Partnered</label><br/><br/>
+
+
+                <label>Stream Type</label><br/>
+                <input type="radio" id="MT" name="mat" value=1 checked="checked">
+                <label for="MT">Mature</label><br/>
+                <input type="radio" id="MF" name="mat" value=0>
+                <label for="MF">Not Mature</label><br/><br/>
+
+                <input type="submit" id="submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
