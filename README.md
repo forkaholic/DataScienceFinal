@@ -3,8 +3,6 @@
 ## Introduction
 The purpose of the project was to create a model to help twitch streamers determine success. The model predicts follower growth given performance based metrics which streamers can use to determine how well they did by comparing to actual follower count in any given year.
 
-![Results](https://raw.githubusercontent.com/salterdatwit/DataScienceFinal/main/Results.png)
-
 ![Website](https://raw.githubusercontent.com/salterdatwit/DataScienceFinal/main/Website.png)
 
 ## Selection of Data
@@ -29,11 +27,13 @@ Tools:
 * scikit-learn
 * scipy
 * flask
-* 
+
 ## Results
 Our model had an R<sup>2</sup> value of around .568. This means that our model accounts for about 56.8% of the variance. While real data varies quite far, it provides a good baseline for follower growth and shows a trend. A higher number is also harder to achieve due to other variables that go into follower growth such as the streamers behaviour and advertising.
 
 The model should not be used to determine growth for smaller streamers. The data was trained on the top 1001, so the follower growth will be much higher than it should be.
+
+![Results](https://raw.githubusercontent.com/salterdatwit/DataScienceFinal/main/Results.png)
 
 ## Discussion
 We experiented with SGD regression before ultimately settling on using lasso instead. We decided on a regression because we were predicting a quantity not a quality. We started with sgd because Devin forgot which way the aligator goes for greater than. We then decided to go with lasso.
